@@ -25,7 +25,7 @@ const Shop = () => {
     return (
         <div className="shop">
             <div className="shopTitle">
-                <h1>The Shop</h1>
+                <h1>Annie's Handmade Pottery</h1>
             </div>
             <div>
                 <input 
