@@ -14,8 +14,8 @@ const Product = (props) => {
             <img src={productImages[0]} alt={productName} onClick={() => setShowDialog(true)}/>
             <Dialog isOpen={showDialog} onClose={() => setShowDialog(false)}>
                 <div className="dialogProduct">
+                    <h2><b>{productName}</b></h2>
                     <ImageSlider images={productImages} />
-                    <p>{productName}</p>
                     <p>${price}</p>
                     <button className="addToCartBttn" onClick={() => addToCart(id)}>
                         Add To Cart    
