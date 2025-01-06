@@ -1,132 +1,73 @@
-import product1 from './images/1.png';
-import product2 from './images/2.png';
-import product3 from './images/3.png';
-import product4 from './images/4.png';
-import product5 from './images/5.png';
-import product6 from './images/6.png';
-import product7 from './images/7.png';
-import product8 from './images/8.png';
-import product9 from './images/9.jpg';
-import product10 from './images/10.png';
-import product11 from './images/11.png';
-import product12 from './images/12.png';
-import product13 from './images/13.png';
-import product14 from './images/14.png';
-import product15 from './images/15.png';
-import product16 from './images/16.png';
+const product1Imgs = require.context('./images/1', true);
+const product1ImgList = product1Imgs.keys().map(image => product1Imgs(image));
+
+const product2Imgs = require.context('./images/2', true);
+const product2ImgList = product2Imgs.keys().map(image => product2Imgs(image));
+
+const product3Imgs = require.context('./images/3', true);
+const product3ImgList = product3Imgs.keys().map(image => product3Imgs(image));
+
+const product4Imgs = require.context('./images/4', true);
+const product4ImgList = product4Imgs.keys().map(image => product4Imgs(image));
+
+const product5Imgs = require.context('./images/5', true);
+const product5ImgList = product5Imgs.keys().map(image => product5Imgs(image));
+
+const product6Imgs = require.context('./images/6', true);
+const product6ImgList = product6Imgs.keys().map(image => product6Imgs(image));
+
+const product7Imgs = require.context('./images/7', true);
+const product7ImgList = product7Imgs.keys().map(image => product7Imgs(image));
 
 const PRODUCTS = [
     {
         id: 1,
-        productName: "Orange Purse",
+        productName: "Geometric Vase",
         price: 52.60,
-        tags: ["orange", "purse"],
-        productImage: product1,
+        tags: ["grey", "vase"],
+        productImages: product1ImgList,
     },
     {
         id: 2,
-        productName: "Blue T-Shirt",
+        productName: "Bowl with Fish",
         price: 15.00,
-        tags: ["blue", "shirt", "t-shirt", "short-sleeve"],
-        productImage: product2,
+        tags: ["blue", "bowl", "fish"],
+        productImages: product2ImgList,
     },
     {
         id: 3,
-        productName: "Black Hat",
+        productName: "Leaf Bowl",
         price: 9.99,
-        tags: ["black", "hat", "fancy"],
-        productImage: product3,
+        tags: ["orange", "bowl", "leaf"],
+        productImages: product3ImgList,
     },
     {
         id: 4,
-        productName: "Pink Hat",
+        productName: "Gourd Vase",
         price: 12.99,
-        tags: ["pink", "hat"],
-        productImage: product4,
+        tags: ["pink", "vase", "gourd"],
+        productImages: product4ImgList,
     },
     {
         id: 5,
-        productName: "Red Hat",
+        productName: "Circular Vase",
         price: 11.99,
-        tags: ["red", "hat"],
-        productImage: product5,
+        tags: ["blue", "vase"],
+        productImages: product5ImgList,
     },
     {
         id: 6,
-        productName: "Blue Jacket",
+        productName: "Small Pot",
         price: 29.99,
-        tags: ["blue", "jacket", "fleece"],
-        productImage: product6,
+        tags: ["orange", "pot"],
+        productImages: product6ImgList,
     },
     {
         id: 7,
-        productName: "Brown Hat",
+        productName: "Mug with Handle",
         price: 9.99,
-        tags: ["brown", "hat"],
-        productImage: product7,
-    },
-    {
-        id: 8,
-        productName: "Yellow and Blue Sweater",
-        price: 19.99,
-        tags: ["tie-dye", "sweatshirt", "blue", "yellow", "multicolor"],
-        productImage: product8,
-    },
-    {
-        id: 9,
-        productName: "Brown Shoes",
-        price: 38.29,
-        tags: ["brown", "shoes", "fancy"],
-        productImage: product9,
-    },
-    {
-        id: 10,
-        productName: "Green Boots",
-        price: 29.99,
-        tags: ["green", "boots", "shoes"],
-        productImage: product10,
-    },
-    {
-        id: 11,
-        productName: "Brown Boots",
-        price: 29.99,
-        tags: ["brown", "boots", "tan", "shoes"],
-        productImage: product11,
-    },
-    {
-        id: 12,
-        productName: "Green Shorts",
-        price: 13.00,
-        tags: ["green", "short", "multicolor", "red", "blue"],
-        productImage: product12,
-    },
-    {
-        id: 13,
-        productName: "Pink Skirt",
-        price: 19.99,
-        tags: ["pink", "skirt"],
-        productImage: product13,
-    },
-    {
-        id: 14,
-        productName: "Green Shirt",
-        price: 15.00,
-        tags: ["green", "shirt", "t-shirt", "short-sleeve"],
-        productImage: product14,
-    },
-    {
-        id: 15,
-        productName: "Blue Shirt",
-        price: 15.00,
-        tags: ["blue", "shirt", "t-shirt", "short-sleeve"],
-        productImage: product15,
-    },
-    {
-        id: 16,
-        productName: "Black Shirt",
-        price: 15.00,
-        tags: ["black", "shirt", "short-sleeve", "t-shirt"],
-        productImage: product16,
+        tags: ["white", "grey", "mug"],
+        productImages: product7ImgList,
     },
 ];
 

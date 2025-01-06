@@ -40,3 +40,7 @@
     color: white;
     cursor: pointer;
 }
+
+.dialogProduct img {
+    width: 50%;
+}

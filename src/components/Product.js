@@ -1,13 +1,27 @@
 import './Product.css';
 import { useCart } from '../contexts/ShopContext';
+import { useState } from 'react';
+import Dialog from './Dialog.js';
+import ImageSlider from './ImageSlider.js';
 
 const Product = (props) => {
-    const { id, productName, price, productImage } = props.data;
+    const { id, productName, price, productImages } = props.data;
     const { addToCart } = useCart();
+    const [showDialog, setShowDialog] = useState(false);
 
     return (
         <div className="product">
-            <img src={productImage} alt={productName}/>
+            <img src={productImages[0]} alt={productName} onClick={() => setShowDialog(true)}/>
+            <Dialog isOpen={showDialog} onClose={() => setShowDialog(false)}>
+                <div className="dialogProduct">
+                    <ImageSlider images={productImages} />
+                    <p>{productName}</p>
+                    <p>${price}</p>
+                    <button className="addToCartBttn" onClick={() => addToCart(id)}>
+                        Add To Cart    
+                    </button>    
+                </div>
+            </Dialog>
             <div className="description">
                 <p>
                     <b>{productName}</b>

@@ -1,0 +1,11 @@
+.dialog {
+    background-color: white;
+    border: 1px solid #a0a0a0;
+    border-radius: 4px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 80%;
+  }
