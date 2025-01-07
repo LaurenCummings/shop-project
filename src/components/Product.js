@@ -8,6 +8,15 @@ const Product = (props) => {
     const { id, productName, price, productImages } = props.data;
     const { addToCart } = useCart();
     const [showDialog, setShowDialog] = useState(false);
+    const [isAdding, setIsAdding] = useState(false);
+
+    const addToCartText = () => {
+        setIsAdding(true);
+
+        setTimeout(() => {
+            setIsAdding(false);
+        }, 500);
+    }
 
     return (
         <div className="product">
@@ -17,8 +26,8 @@ const Product = (props) => {
                     <h2><b>{productName}</b></h2>
                     <ImageSlider images={productImages} />
                     <p>${price.toFixed(2)}</p>
-                    <button className="addToCartBttn" onClick={() => addToCart(id)}>
-                        Add To Cart    
+                    <button className="addToCartBttn" disabled={isAdding} onClick={() => {addToCart(id); addToCartText();}}>
+                        {isAdding ? "Product Added to Cart" : "Add To Cart"}    
                     </button>    
                 </div>
             </Dialog>
@@ -28,8 +37,8 @@ const Product = (props) => {
                 </p>
                 <p>${price.toFixed(2)}</p>
             </div>
-            <button className="addToCartBttn" onClick={() => addToCart(id)}>
-                Add To Cart
+            <button className="addToCartBttn" disabled={isAdding} onClick={() => {addToCart(id); addToCartText();}}>
+                {isAdding ? "Product Added to Cart" : "Add To Cart"}
             </button>
         </div>
     )

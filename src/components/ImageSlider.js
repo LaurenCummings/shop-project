@@ -1,6 +1,6 @@
 import './ImageSlider.css';
 import { useState } from 'react';
-import { ArrowBigLeft, ArrowBigRight } from 'lucide-react';
+import { ArrowCircleLeft, ArrowCircleRight } from 'phosphor-react';
 
 const ImageSlider = ({images}) => {
     const [imageIndex, setImageIndex] = useState(0);
@@ -26,8 +26,8 @@ const ImageSlider = ({images}) => {
     return (
         <div className="imageSlider">
             <img src={images[imageIndex]} alt="product image" className="img-slider-img" />
-            <button onClick={showPrevImage} className="img-slider-btn-left"><ArrowBigLeft /></button>
-            <button onClick={showNextImage} className="img-slider-btn-right"><ArrowBigRight /></button>
+            <button onClick={showPrevImage} className="img-slider-btn-left"><ArrowCircleLeft size={32} /></button>
+            <button onClick={showNextImage} className="img-slider-btn-right"><ArrowCircleRight size={32} /></button>
         </div>
     )
 }
