@@ -1,11 +1,15 @@
 .dialog {
-    background-color: white;
+    background-color: rgb(217, 217, 217);
     border: 1px solid #a0a0a0;
-    border-radius: 4px;
+    border-radius: 5%;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
     height: 80%;
+  }
+
+  .dialog img {
+    width: 50%;
   }
