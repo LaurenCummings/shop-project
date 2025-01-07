@@ -16,7 +16,7 @@ const Product = (props) => {
                 <div className="dialogProduct">
                     <h2><b>{productName}</b></h2>
                     <ImageSlider images={productImages} />
-                    <p>${price}</p>
+                    <p>${price.toFixed(2)}</p>
                     <button className="addToCartBttn" onClick={() => addToCart(id)}>
                         Add To Cart    
                     </button>    
@@ -26,7 +26,7 @@ const Product = (props) => {
                 <p>
                     <b>{productName}</b>
                 </p>
-                <p>${price}</p>
+                <p>${price.toFixed(2)}</p>
             </div>
             <button className="addToCartBttn" onClick={() => addToCart(id)}>
                 Add To Cart

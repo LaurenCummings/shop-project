@@ -12,7 +12,7 @@ const CartItem = (props) => {
                 <p>
                     <b>{productName}</b>
                 </p>
-                <p>${price}</p>
+                <p>${price.toFixed(2)}</p>
                 <div className="countHandler">
                     <button onClick={() => removeFromCart(id)}> - </button>
                     <input value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)} />
