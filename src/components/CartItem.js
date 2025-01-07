@@ -2,12 +2,12 @@ import './CartItem.css';
 import { useCart } from '../contexts/ShopContext';
 
 const CartItem = (props) => {
-    const { id, productName, price, productImage } = props.data;
+    const { id, productName, price, productImages } = props.data;
     const { cartItems, addToCart, removeFromCart, updateCartItemCount } = useCart();
 
     return (
         <div className="cartItem">
-            <img src={productImage} />
+            <img src={productImages[0]} />
             <div className="description">
                 <p>
                     <b>{productName}</b>
