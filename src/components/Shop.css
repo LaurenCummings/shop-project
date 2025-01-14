@@ -1,14 +1,22 @@
 .shopTitle {
-    margin-top: 100px;
-    text-align: center;
-    font-size: 40px;
+    /* padding-top: 100px; */
+    height: 200px;
+    background-image: url("../images/pottery-bg.jpg");
+}
+
+.shopTitle h1 {
+    color: rgb(215, 218, 229);
+    font-size: 70px;
     font-family: 'Arial', sans-serif;
-    color: rgb(67, 58, 63);
+    text-align: center;
+    margin: 0;
+    padding: 30px;
 }
 
 .searchBar {
     width: 16%;
     margin: auto;
+    margin-top: 50px;
     border:3px outset rgb(67, 58, 63);
     box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
     -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
