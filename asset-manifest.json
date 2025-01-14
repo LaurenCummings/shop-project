@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shop-project/static/css/main.2928103e.css",
-    "main.js": "/shop-project/static/js/main.f0550904.js",
+    "main.css": "/shop-project/static/css/main.4d9a8717.css",
+    "main.js": "/shop-project/static/js/main.a2f8c1fc.js",
     "static/js/488.597f76cf.chunk.js": "/shop-project/static/js/488.597f76cf.chunk.js",
     "static/media/20250105_204823.jpg": "/shop-project/static/media/20250105_204823.97926af39c12b2dc19ac.jpg",
     "static/media/20250105_205758.jpg": "/shop-project/static/media/20250105_205758.2203dd5ebb1482550d7a.jpg",
@@ -29,13 +29,14 @@
     "static/media/20250105_210022.jpg": "/shop-project/static/media/20250105_210022.23c9ccf3ed806baf7a73.jpg",
     "static/media/20250105_205537.jpg": "/shop-project/static/media/20250105_205537.36c963e41b9fb8f072e0.jpg",
     "static/media/20250105_205438.jpg": "/shop-project/static/media/20250105_205438.790f5c0dd84422dc888c.jpg",
+    "static/media/pottery-bg.jpg": "/shop-project/static/media/pottery-bg.bd64d4bef2295f7eec40.jpg",
     "index.html": "/shop-project/index.html",
-    "main.2928103e.css.map": "/shop-project/static/css/main.2928103e.css.map",
-    "main.f0550904.js.map": "/shop-project/static/js/main.f0550904.js.map",
+    "main.4d9a8717.css.map": "/shop-project/static/css/main.4d9a8717.css.map",
+    "main.a2f8c1fc.js.map": "/shop-project/static/js/main.a2f8c1fc.js.map",
     "488.597f76cf.chunk.js.map": "/shop-project/static/js/488.597f76cf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2928103e.css",
-    "static/js/main.f0550904.js"
+    "static/css/main.4d9a8717.css",
+    "static/js/main.a2f8c1fc.js"
   ]
 }
