@@ -13,3 +13,14 @@
   .dialog img {
     width: 50%;
   }
+
+  .closeDialog {
+    all:unset;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+
+  .dialog button:hover {
+    cursor: pointer;
+  }
