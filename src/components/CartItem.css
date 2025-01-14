@@ -1,25 +1,35 @@
  .cartItem {
-    width: 700px;
-    height: 250px;
+    width: 100%;
+    height: 50%;
     display: flex;
   
     align-items: center;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     border-radius: 25px;
-    margin: 30px;
+    margin-bottom: 5%;
 }
   
 .cartItem img {
-    width: 200px;
+    width: 30%;
+    margin: 2%;
+    border-radius: 25px;
 }
   
 .cartItem .description {
-    width: 100%;
-    font-size: 30px;
+    width: 90%;
+    font-size: 3vw;
+}
+
+.cartItem p {
+    margin: 2%;
 }
   
+.countHandler {
+    margin-bottom: 2%;
+}
+
 .countHandler input {
-    width: 40px;
+    width: 10%;
     text-align: center;
     font-weight: bolder;
 }

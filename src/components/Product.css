@@ -16,12 +16,15 @@
     border-radius: 15%;
 }
 
+.product img:hover {
+    opacity: 80%;
+}
+
 .product .description {
     text-align: center;
 }
 
 .product:hover {
-    transition: 0.3s ease-in;
     cursor: pointer;
 }
 

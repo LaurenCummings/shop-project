@@ -5,6 +5,10 @@
     align-items: center;
   }
 
+.cartItems {
+    width: 70%;
+}
+
 .checkout button {
     width: 150px;
     height: 50px;
@@ -14,4 +18,8 @@
     border-radius: 8px;
     margin: 10px;
     cursor: pointer;
+}
+
+.checkout button:hover {
+    opacity: 90%;
 }

@@ -37,9 +37,6 @@ const Product = (props) => {
                 </p>
                 <p>${price.toFixed(2)}</p>
             </div>
-            <button className="addToCartBttn" disabled={isAdding} onClick={() => {addToCart(id); addToCartText();}}>
-                {isAdding ? "Product Added to Cart" : "Add To Cart"}
-            </button>
         </div>
     )
 };

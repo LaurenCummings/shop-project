@@ -2,6 +2,7 @@ import './Shop.css';
 import PRODUCTS from '../Products';
 import Product from './Product';
 import { useState } from 'react';
+import { MagnifyingGlass } from 'phosphor-react';
 
 const Shop = () => {
 
@@ -27,14 +28,16 @@ const Shop = () => {
             <div className="shopTitle">
                 <h1>Our Products</h1>
             </div>
-            <div>
+            <div className="searchBar">
                 <input 
                     placeholder="Search for products" 
                     type="text" 
                     value={searchTerm}
                     onChange={handleInputChange}
                 />
-                <button onClick={searchProducts}>Search</button>
+                <button onClick={searchProducts}>
+                    <MagnifyingGlass size={22}></MagnifyingGlass>
+                </button>
             </div>
             <div className="products">
                 {displayedProducts.map((product) => (
