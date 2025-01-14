@@ -6,13 +6,24 @@
     color: rgb(38, 38, 38);
 }
 
+.searchBar {
+    width: 16%;
+    margin: auto;
+    border:3px outset #999;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    -moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
 .searchBar input {
     height: 25px;
+    width: 78%;
     vertical-align: middle;
 }
 
 .searchBar button {
     vertical-align: middle;
+    width: 18%;
 }
 
 .products {
