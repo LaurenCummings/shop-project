@@ -1,0 +1,24 @@
+.shopTitle {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Arial', sans-serif;
+    color: rgb(38, 38, 38);
+}
+
+.searchBar input {
+    height: 25px;
+    vertical-align: middle;
+}
+
+.searchBar button {
+    vertical-align: middle;
+}
+
+.products {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
