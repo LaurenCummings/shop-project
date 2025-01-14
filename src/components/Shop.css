@@ -6,6 +6,15 @@
     color: rgb(38, 38, 38);
 }
 
+.searchBar input {
+    height: 25px;
+    vertical-align: middle;
+}
+
+.searchBar button {
+    vertical-align: middle;
+}
+
 .products {
     width: 100%;
     height: auto;
