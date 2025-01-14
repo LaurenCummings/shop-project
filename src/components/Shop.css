@@ -33,6 +33,10 @@
     width: 18%;
 }
 
+.searchBar button:hover {
+    cursor: pointer;
+}
+
 .products {
     width: 100%;
     height: auto;

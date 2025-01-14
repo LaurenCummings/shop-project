@@ -18,14 +18,11 @@
 
 .product img:hover {
     opacity: 80%;
+    cursor: pointer;
 }
 
 .product .description {
     text-align: center;
-}
-
-.product:hover {
-    cursor: pointer;
 }
 
 .addToCartBttn {

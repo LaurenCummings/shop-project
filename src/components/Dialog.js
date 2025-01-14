@@ -1,4 +1,5 @@
 import './Dialog.css';
+import { XCircle } from 'phosphor-react';
 
 const Dialog = ({ isOpen, onClose, children }) => {
     if (!isOpen) {
@@ -8,7 +9,9 @@ const Dialog = ({ isOpen, onClose, children }) => {
     return (
         <div className="dialog">
             <div className="dialogContent">
-                <button onClick={onClose}>Close</button>
+                <button className="closeDialog" onClick={onClose}>
+                    <XCircle size={32} />
+                </button>
                 {children}
             </div>
         </div>
