@@ -38,7 +38,11 @@ export const ShopContextProvider = (props) => {
                 totalAmount += cartItems[item] * itemInfo.price;
             }
         }
-        return totalAmount;
+        return totalAmount.toFixed(2);
+    }
+
+    const clearCart = () => {
+        setCartItems(getDefaultCart());
     }
 
     const contextValue = {
@@ -46,7 +50,8 @@ export const ShopContextProvider = (props) => {
         addToCart, 
         removeFromCart, 
         updateCartItemCount, 
-        getTotalCartAmount
+        getTotalCartAmount,
+        clearCart
     };
 
     return (
