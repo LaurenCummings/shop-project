@@ -41,6 +41,14 @@ export const ShopContextProvider = (props) => {
         return totalAmount.toFixed(2);
     }
 
+    const getNumCartItems = () => {
+        let totalItems = 0;
+        for (const item in cartItems) {
+            totalItems += cartItems[item];
+        }
+        return totalItems;
+    }
+
     const clearCart = () => {
         setCartItems(getDefaultCart());
     }
@@ -51,6 +59,7 @@ export const ShopContextProvider = (props) => {
         removeFromCart, 
         updateCartItemCount, 
         getTotalCartAmount,
+        getNumCartItems,
         clearCart
     };
 
