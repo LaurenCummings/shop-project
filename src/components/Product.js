@@ -21,16 +21,23 @@ const Product = (props) => {
     return (
         <div className="product">
             <img src={productImages[0]} alt={productName} onClick={() => setShowDialog(true)}/>
-            <Dialog isOpen={showDialog} onClose={() => setShowDialog(false)}>
-                <div className="dialogProduct">
-                    <h2><b>{productName}</b></h2>
-                    <ImageSlider images={productImages} />
-                    <p>${price.toFixed(2)}</p>
-                    <button className="addToCartBttn" disabled={isAdding} onClick={() => {addToCart(id); addToCartText();}}>
-                        {isAdding ? "Product Added to Cart" : "Add To Cart"}    
-                    </button>    
+            {showDialog && (
+                <div className="modalOverlay">
+                    <Dialog isOpen={showDialog} onClose={() => setShowDialog(false)}>
+                        <div className="dialogProduct">
+                            <h2><b>{productName}</b></h2>
+                            <ImageSlider images={productImages} />
+                            <p>${price.toFixed(2)}</p>
+                            <button 
+                                className="addToCartBttn" 
+                                disabled={isAdding} 
+                                onClick={() => {addToCart(id); addToCartText();}}>
+                                {isAdding ? "Product Added to Cart" : "Add To Cart"}    
+                            </button>    
+                        </div>
+                    </Dialog>
                 </div>
-            </Dialog>
+            )}
             <div className="description">
                 <p>
                     <b>{productName}</b>
