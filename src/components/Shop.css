@@ -13,7 +13,7 @@
 }
 
 .searchBar {
-    width: 16%;
+    width: 215px;
     margin: auto;
     margin-top: 50px;
     border:3px outset rgb(67, 58, 63);
@@ -24,13 +24,13 @@
 
 .searchBar input {
     height: 25px;
-    width: 78%;
+    width: 168px;
     vertical-align: middle;
 }
 
 .searchBar button {
     vertical-align: middle;
-    width: 18%;
+    width: 39px;
 }
 
 .searchBar button:hover {
