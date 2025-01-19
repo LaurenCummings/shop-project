@@ -20,7 +20,12 @@ const Product = (props) => {
 
     return (
         <div className="product">
-            <img src={productImages[0]} alt={productName} onClick={() => setShowDialog(true)}/>
+            <img 
+                className="productImage" 
+                src={productImages[0]} 
+                alt={productName} 
+                onClick={() => setShowDialog(true)}
+            />
             {showDialog && (
                 <div className="modalOverlay">
                     <Dialog isOpen={showDialog} onClose={() => setShowDialog(false)}>
