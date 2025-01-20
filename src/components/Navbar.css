@@ -34,3 +34,41 @@
     position: absolute;
     left: 0;
 }
+
+.hamburgerMenu {
+    all: unset;
+    color: white;
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .links {
+        display: none;
+    }
+
+    .links.menuOpen {
+        display: block;
+        width: 150px;
+        position: absolute;
+        right: 0;
+        margin-right: 0;
+        background-color: rgb(67, 58, 63);
+        margin-top: 195px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .links.menuOpen a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .hamburgerMenu {
+        display: inline;
+        margin-right: 50px;
+    }
+
+    .hamburgerMenu:hover {
+        cursor: pointer;
+    }
+}
