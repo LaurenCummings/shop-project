@@ -24,7 +24,7 @@ const CartItem = (props) => {
             </button>
             <ConfirmDialog
                 isOpen = {showDialog}
-                title="Confirm Delete"
+                title = {productName}
                 message="Delete item from cart?"
                 onConfirm={handleDelete}
                 onCancel={() => setShowDialog(false)}
