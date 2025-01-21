@@ -8,8 +8,8 @@ const ConfirmDialog = ({ isOpen, title, message, onConfirm, onCancel }) => {
     return (
         <div>
             {isOpen && (
-                <div className="dialog">
-                    <h2>{title}</h2>
+                <div className="confirmDialog">
+                    <h3>{title}</h3>
                     <p>{message}</p>
                     <button onClick={() => { onConfirm(); }}>Delete Item</button>
                     <button onClick={() => { onCancel(); }}>Cancel</button>
