@@ -12,10 +12,13 @@ const Cart = () => {
     const navigate = useNavigate();
 
     return (
+        
         <div className="cart">
+        {totalAmount > 0 ? (
             <div>
                 <h1>Your Cart Items</h1>
             </div>
+        ) : ""}
             <div className="cartItems">
                 {PRODUCTS.map((product) => {
                     if (cartItems[product.id] !== 0) {
