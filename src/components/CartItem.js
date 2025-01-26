@@ -43,7 +43,8 @@ const CartItem = (props) => {
                             else {
                                 setShowDialog(true);
                             }}}> - </button>
-                        <input 
+                        <input
+                            type="number" 
                             value={cartItems[id]} 
                             onChange={(e) => updateCartItemCount(Number(e.target.value), id)} 
                         />
