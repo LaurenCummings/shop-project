@@ -38,7 +38,7 @@ const CartItem = (props) => {
                     <div className="countHandler">
                         <button onClick={() => 
                             { if (cartItems[id] > 1) {
-                                removeFromCart(id)
+                                removeFromCart(id);
                             }
                             else {
                                 setShowDialog(true);
@@ -46,7 +46,14 @@ const CartItem = (props) => {
                         <input
                             type="number" 
                             value={cartItems[id]} 
-                            onChange={(e) => updateCartItemCount(Number(e.target.value), id)} 
+                            onChange={(e) => 
+                                { if (cartItems[id] > 1) {
+                                    updateCartItemCount(Number(e.target.value), id);
+                                }
+                                else {
+                                    setShowDialog(true);
+                                }}
+                            }
                         />
                         <button onClick={() => addToCart(id)}> + </button>
                     </div>
