@@ -5,6 +5,7 @@ import Shop from './components/Shop';
 import Cart from './components/Cart';
 import ThankYou from './components/ThankYou';
 import About from './components/About';
+import Footer from './components/Footer';
 import { ShopContextProvider } from './contexts/ShopContext';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/thankYou" element={<ThankYou />} />
                 <Route path="/about" element={<About />} />
                 </Routes>
+                <Footer />
             </Router>
         </ShopContextProvider>
     </div>
