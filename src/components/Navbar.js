@@ -18,6 +18,7 @@ const Navbar = () => {
         <div className="navbar">
             <img src={logo} alt="logo" />
             <div className={`links ${isOpen ? "menuOpen" : ""}`}>
+                <Link to="/about"> About </Link>
                 <Link to="/"> Shop </Link>
                 <Link to="/cart">
                     <ShoppingCart className="cartIcon" size={32} /> 

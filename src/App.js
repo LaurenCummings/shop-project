@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Shop from './components/Shop';
 import Cart from './components/Cart';
 import ThankYou from './components/ThankYou';
+import About from './components/About';
 import { ShopContextProvider } from './contexts/ShopContext';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
                 <Route path="/shop-project" element={<Shop />} />
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/thankYou" element={<ThankYou />} />
+                <Route path="/about" element={<About />} />
                 </Routes>
             </Router>
         </ShopContextProvider>
