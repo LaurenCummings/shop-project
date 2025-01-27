@@ -15,12 +15,16 @@ const Shop = () => {
 
     const searchProducts = () => {
         let selectedProducts = [];
-        for(let i = 1; i < PRODUCTS.length; i++) {
-            if (PRODUCTS[i].tags.includes(searchTerm)) {
-                selectedProducts.push(PRODUCTS[i]);
+        if (searchTerm == "") {
+            selectedProducts = PRODUCTS;
+        } else {
+            for(let i = 1; i < PRODUCTS.length; i++) {
+                if (PRODUCTS[i].tags.includes(searchTerm)) {
+                    selectedProducts.push(PRODUCTS[i]);
+                }
             }
+            setDisplayedProducts(selectedProducts); 
         }
-        setDisplayedProducts(selectedProducts);
     };
 
     return (
