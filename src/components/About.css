@@ -1,0 +1,33 @@
+.about {
+    margin-bottom: 30px;
+}
+
+.about p {
+    width: 50%;
+    margin: auto;
+}
+
+.about img {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+    .about p {
+        width: 60%;
+    }
+
+    .about img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 500px) {
+    .about p {
+        width: 70%;
+    }
+    
+    .about img {
+        width: 80%;
+    }
+}
