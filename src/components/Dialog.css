@@ -10,23 +10,35 @@
     height: 600px;
   }
 
-  @media (max-width: 500px) {
-    .dialog {
-      height: 270px;
-    }
-  }
-
-  .dialog img {
+.dialog img {
     width: 60%;
   }
 
-  .closeDialog {
+@media (max-width: 900px) {
+  .dialog {
+    height: 500px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+    .dialog {
+      height: 500px;
+      width: 95%;
+    }
+
+    .dialog img {
+      width: 90%;
+    }
+  } 
+
+.closeDialog {
     all: unset;
     position: absolute;
     right: 5px;
     top: 5px;
   }
 
-  .dialog button:hover {
+.dialog button:hover {
     cursor: pointer;
   }
