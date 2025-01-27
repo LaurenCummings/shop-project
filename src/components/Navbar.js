@@ -20,6 +20,7 @@ const Navbar = () => {
             <div className={`links ${isOpen ? "menuOpen" : ""}`}>
                 <Link to="/about"> About </Link>
                 <Link to="/"> Shop </Link>
+                <Link to="/contact"> Contact </Link>
                 <Link to="/cart">
                     <ShoppingCart className="cartIcon" size={32} /> 
                     <p className="itemCount">({getNumCartItems()})</p>
