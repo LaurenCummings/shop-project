@@ -8,3 +8,11 @@
     color: white;
     padding-top: 40px;
 }
+
+.logos {
+    all: unset;
+    color: white;
+    position: absolute;
+    right: 0;
+    margin: 5px;
+}
