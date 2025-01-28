@@ -9,6 +9,18 @@
     width: 70%;
 }
 
+@media (max-width: 900px) {
+    .cartItems {
+        width: 85%;
+    }
+}
+
+@media (max-width: 500px) {
+    .cartItems {
+        width: 95%;
+    }
+}
+
 .checkout button {
     width: 150px;
     height: 50px;
