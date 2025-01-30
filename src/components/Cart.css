@@ -1,3 +1,7 @@
+.cartContainer {
+    min-height: 73vh;
+}
+
 .cart {
     display: flex;
     flex-direction: column;
