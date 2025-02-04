@@ -10,18 +10,17 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
-        setIsOpen((open) => !open);
-        console.log("Toggled");
+        setIsOpen((isOpen) => !isOpen);
     }
 
     return (
         <div className="navbar">
             <img src={logo} alt="logo" />
             <div className={`links ${isOpen ? "menuOpen" : ""}`}>
-                <Link to="/about"> About </Link>
-                <Link to="/"> Shop </Link>
-                <Link to="/contact"> Contact </Link>
-                <Link to="/cart">
+                <Link to="/about" onClick={isOpen ? toggleMenu : null}> About </Link>
+                <Link to="/" onClick={isOpen ? toggleMenu : null}> Shop </Link>
+                <Link to="/contact" onClick={isOpen ? toggleMenu : null}> Contact </Link>
+                <Link to="/cart" onClick={isOpen ? toggleMenu : null}>
                     <ShoppingCart className="cartIcon" size={32} /> 
                     <p className="itemCount">({getNumCartItems()})</p>
                 </Link>
