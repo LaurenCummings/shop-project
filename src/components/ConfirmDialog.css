@@ -1,10 +1,11 @@
 .confirmDialog {
-    background-color: rgb(217, 217, 217);
-    border: 1px solid #a0a0a0;
+    background-color: rgb(205, 185, 173);
+    border: 2px solid #a0a0a0;
     border-radius: 5%;
     position: fixed;
     top: 50%;
     left: 50%;
+    text-align: center;
     transform: translate(-50%, -50%);
     width: 200px;
     height: 150px;
