@@ -8,6 +8,15 @@ const Product = (props) => {
     const { id, productName, price, productImages } = props.data;
     const { addToCart } = useCart();
     const [showDialog, setShowDialog] = useState(false);
+    const [isAdding, setIsAdding] = useState(false);
+
+    const addToCartText = () => {
+        setIsAdding(true);
+
+        setTimeout(() => {
+            setIsAdding(false);
+        }, 500);
+    }
 
     return (
         <div className="product">
@@ -26,8 +35,9 @@ const Product = (props) => {
                             <p>${price.toFixed(2)}</p>
                             <button 
                                 className="addToCartBttn" 
-                                onClick={() => {addToCart(id)}}>
-                                    Add to Cart
+                                disabled={isAdding} 
+                                onClick={() => {addToCart(id); addToCartText();}}>
+                                {isAdding ? "Product Added to Cart" : "Add To Cart"}    
                             </button>    
                         </div>
                     </Dialog>
