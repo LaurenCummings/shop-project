@@ -39,3 +39,7 @@
 .checkout button:hover {
     opacity: 90%;
 }
+
+.checkout p {
+    text-align: center;
+}

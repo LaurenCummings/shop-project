@@ -19,6 +19,7 @@
 .cartItem .description {
     width: 90%;
     font-size: 3vw;
+    text-align: center;
 }
 
 .cartItem p {
