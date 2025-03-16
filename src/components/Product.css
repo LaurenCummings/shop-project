@@ -26,20 +26,26 @@
 }
 
 .addToCartBttn {
-    background-color: transparent;
-    border: 2px solid rgb(19, 19, 19);
+    background-color: rgb(19, 19, 19);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    height: 30px;
     min-width: 100px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-radius: 15px;
 }
 
 .addToCartBttn:hover {
-    background-color: rgb(19, 19, 19);
-    color: white;
-    cursor: pointer;
+    opacity: 90%;
+}
+
+.addToCartBttn:active {
+    background-color: white;
+    color: rgb(19, 19, 19);
 }
 
 .modalOverlay {
