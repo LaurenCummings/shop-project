@@ -16,19 +16,17 @@
     width: 215px;
     margin: auto;
     margin-top: 50px;
-    border:3px outset rgb(67, 58, 63);
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
-    -moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
 }
 
 .searchBar input {
+    background-color: rgb(215, 218, 229);
     height: 25px;
     width: 168px;
     vertical-align: middle;
 }
 
 .searchBar button {
+    background-color: rgb(215, 218, 229);
     vertical-align: middle;
     width: 39px;
 }
