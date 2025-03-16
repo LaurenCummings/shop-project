@@ -35,8 +35,8 @@
 .closeDialog {
     all: unset;
     position: absolute;
-    right: 5px;
-    top: 5px;
+    right: 10px;
+    top: 10px;
   }
 
 .dialog button:hover {
