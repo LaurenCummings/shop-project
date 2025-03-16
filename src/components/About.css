@@ -13,14 +13,19 @@
 
 .about p {
     width: 350px;
+    margin-bottom: 30px;
 }
 
 .about img {
     width: 300px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-@media (max-width: 750px) {
+.shop-front-img img {
+    width: 350px;
+}
+
+@media (max-width: 1130px) {
     .about-content {
         flex-wrap: wrap;
     }

@@ -1,5 +1,6 @@
 import './About.css';
-import aboutImg from '../images/about-img.jpg';
+import childImg from '../images/about-img.jpg';
+import shopFrontImg from '../images/shop-front.jpg';
 
 const About = () => {
 
@@ -7,7 +8,9 @@ const About = () => {
         <div className="about">
             <h1>About the Shop</h1>
             <div className="about-content">
-                <img src={aboutImg} alt="pottery image" />
+                <div className="shop-front-img">
+                    <img src={shopFrontImg} alt="shop front" />
+                </div>
                 <p>
                     Annie grew up on a farm in Montana. 
                     As a child she would spend hours playing
@@ -23,6 +26,7 @@ const About = () => {
                     where she can be seen regularly creating
                     new pieces.
                 </p>
+                <img src={childImg} alt="child playing in mud" />
             </div>
         </div>
     )
