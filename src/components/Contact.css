@@ -1,16 +1,28 @@
 .contact {
-    margin-top: 20px;
+    margin-top: 50px;
+}
+
+.contact form {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  max-width: 500px;
+  margin: auto;
+  align-items: center;
 }
 
 .contact input[type=text], select, textarea {
-    width: 50%; 
+    width: 100%; 
     padding: 12px; 
     border: 1px solid #ccc; 
     border-radius: 4px; 
     box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
     resize: vertical;
+  }
+
+  .contact textarea {
+    height: 200px;
   }
   
   .contact input[type=submit] {
@@ -20,6 +32,7 @@
     color: white;
     border: none;
     border-radius: 8px;
-    margin: 10px;
+    margin-top: 25px;
+    margin-left: 175px;
     cursor: pointer;
   }
