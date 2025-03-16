@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import { ShoppingCart, List } from 'phosphor-react';
-import logo from '../images/logo.png';
 import { useCart } from '../contexts/ShopContext';
 
 const Navbar = () => {
@@ -15,7 +14,6 @@ const Navbar = () => {
 
     return (
         <div className="navbar">
-            {/* <img src={logo} alt="logo" /> */}
             <div className="logo">
                 <h1>Annie's Handmade Pottery</h1>
             </div>
