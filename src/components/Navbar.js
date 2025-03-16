@@ -15,7 +15,10 @@ const Navbar = () => {
 
     return (
         <div className="navbar">
-            <img src={logo} alt="logo" />
+            {/* <img src={logo} alt="logo" /> */}
+            <div className="logo">
+                <h1>Annie's Handmade Pottery</h1>
+            </div>
             <div className={`links ${isOpen ? "menuOpen" : ""}`}>
                 <Link to="/about" onClick={isOpen ? toggleMenu : null}> About </Link>
                 <Link to="/" onClick={isOpen ? toggleMenu : null}> Shop </Link>
