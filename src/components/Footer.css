@@ -18,3 +18,9 @@
     right: 0;
     margin: 5px;
 }
+
+@media (max-width: 500px) {
+    .footer {
+        height: 100px;
+    }
+}
