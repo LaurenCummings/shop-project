@@ -15,6 +15,9 @@ const Footer = () => {
                 practice project. The shop and its owner
                 are works of fiction.
             </p>
+            <p>
+                <a target="_blank" href="https://icons8.com/icon/85715/pottery">Pottery</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+            </p>
         </div>
     )
 }
