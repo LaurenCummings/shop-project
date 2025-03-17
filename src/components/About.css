@@ -30,3 +30,9 @@
         flex-wrap: wrap;
     }
 }
+
+@media (max-width: 500px) {
+    .about p {
+        font-size: 20px;
+    }
+}
