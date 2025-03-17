@@ -12,29 +12,6 @@
     padding: 30px;
 }
 
-.searchBar {
-    width: 215px;
-    margin: auto;
-    margin-top: 50px;
-}
-
-.searchBar input {
-    background-color: rgb(215, 218, 229);
-    height: 25px;
-    width: 168px;
-    vertical-align: middle;
-}
-
-.searchBar button {
-    background-color: rgb(215, 218, 229);
-    vertical-align: middle;
-    width: 39px;
-}
-
-.searchBar button:hover {
-    cursor: pointer;
-}
-
 .products {
     width: 100%;
     height: auto;
