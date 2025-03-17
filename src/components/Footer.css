@@ -25,6 +25,18 @@
     margin: 5px;
 }
 
+@media (max-width: 950px) {
+    .logos {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 740px) {
+    .footer p {
+        padding-top: 5px;
+    }
+}
+
 @media (max-width: 500px) {
     .footer {
         height: 100px;
