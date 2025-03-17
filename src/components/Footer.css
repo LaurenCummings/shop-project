@@ -41,4 +41,13 @@
     .footer {
         height: 100px;
     }
+
+    .favicon-attr {
+        position: absolute;
+        left: 10px;
+    }
+
+    .logos {
+        margin-top: 60px;
+    }
 }
