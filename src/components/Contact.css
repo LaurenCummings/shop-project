@@ -42,4 +42,8 @@
     .contact form {
       max-width: 350px;
     }
+
+    .contact input[type=submit] {
+      margin-left: 100px;
+    }
   }
