@@ -23,7 +23,7 @@ const PRODUCTS = [
     {
         id: 1,
         productName: "Geometric Vase",
-        price: 52.60,
+        price: 30.00,
         productImages: product1ImgList,
     },
     {
@@ -35,31 +35,31 @@ const PRODUCTS = [
     {
         id: 3,
         productName: "Leaf Bowl",
-        price: 9.99,
+        price: 20.00,
         productImages: product3ImgList,
     },
     {
         id: 4,
         productName: "Gourd Vase",
-        price: 12.99,
+        price: 20.00,
         productImages: product4ImgList,
     },
     {
         id: 5,
         productName: "Circular Vase",
-        price: 11.99,
+        price: 15.00,
         productImages: product5ImgList,
     },
     {
         id: 6,
         productName: "Small Pot",
-        price: 29.99,
+        price: 15.00,
         productImages: product6ImgList,
     },
     {
         id: 7,
         productName: "Mug with Handle",
-        price: 9.99,
+        price: 15.00,
         productImages: product7ImgList,
     },
 ];
