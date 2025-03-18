@@ -9,9 +9,12 @@ const ContactThankYou = () => {
         <div className="contactThankYou">
             <p>Thank you for your message</p>
             <p>You have submitted the following:</p>
-            <p>Name: {info.name}</p>
-            <p>Email: {info.email}</p>
-            <p>Message: {info.message}</p>
+            <div className="contactInfo">
+                <p><b>Name: </b>{info.name}</p>
+                <p><b>Email: </b>{info.email}</p>
+                <p><b>Message: </b>{info.message}</p>               
+            </div>
+
         </div>
     )
 };

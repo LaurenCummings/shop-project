@@ -1,0 +1,15 @@
+.contactThankYou {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    min-height: 68vh;
+    text-align: center;
+    width: 350px;
+}
+
+.contactInfo {
+    text-align: left;
+    word-break: break-all;
+    white-space: normal;
+}
