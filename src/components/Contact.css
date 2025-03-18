@@ -39,6 +39,10 @@
     cursor: pointer;
   }
 
+  .contact input[type=submit]:hover {
+    opacity: 90%;
+  }
+
   @media (max-width: 560px) {
     .contact form {
       max-width: 350px;
