@@ -7,6 +7,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { ShopContextProvider } from './contexts/ShopContext';
+import ContactThankYou from './components/ContactThankYou';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
                 <Route path="/thankYou" element={<ThankYou />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/contact-thank-you" element={<ContactThankYou />} />
                 </Routes>
                 <Footer />
             </Router>

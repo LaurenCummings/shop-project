@@ -1,18 +1,16 @@
 import './Contact.css';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(
-            name,
-            email,
-            message
-        );
+        navigate('/contact-thank-you', { state: { 'name': name, 'email': email, 'message': message}});
     };
 
     return (
