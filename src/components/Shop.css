@@ -10,6 +10,7 @@
     text-align: center;
     margin: 0;
     padding: 30px;
+    text-shadow: -1px -1px 0 rgb(67, 58, 63), 1px -1px 0 rgb(67, 58, 63), -1px 1px 0 rgb(67, 58, 63), 1px 1px 0 rgb(67, 58, 63);
 }
 
 .products {
